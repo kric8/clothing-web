@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  min-height: 1200vh;
+  width: 100%;
+  background: white;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -15,12 +22,12 @@
   height: auto;
 }
 .hero-section {
-  background-image: url("https://live.staticflickr.com/65535/51246752189_57aeb30863_b.jpg");
+  background-image: url("https://i.pinimg.com/originals/5b/67/52/5b67529447c2c398759e23b7700e644a.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; Фиксирует фон при скролле (опционально) */
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -56,7 +63,7 @@ nav {
   left: 0;
   width: 100%;
   padding: 1rem;
-  background: #f0f0f0;
+  background: white;
   z-index: 100; /* Убедитесь, что значение выше, чем у hero-section */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Опциональная тень */
 }
@@ -71,4 +78,28 @@ nav a {
 /* Добавляем отступ для основного контента */
 body {
   padding-top: 60px; /* Высота навбара + доп. пространство */
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 650px;
+}
+.gallery-container {
+  display: flex;
+  gap: 20px;
+}
+.hero-colone1,
+.hero-colone2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
