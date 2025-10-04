@@ -1,4 +1,6 @@
-export default function Home() {
+import React from "react";
+
+const Home = () => {
   // Массив с картинками (можно заменить на свои)
   const images = [
     "https://freight.cargo.site/w/1152/q/94/i/b262d3dacf2bb64f0375be3fe18fe0a2e933e3143747cac34ad8cf08d2b32031/1c3a8fe8-1c33-4c1b-b725-b5f5e97fd746.JPG",
@@ -15,10 +17,12 @@ export default function Home() {
     "https://freight.cargo.site/w/1500/q/75/i/e79bf16597f0338c724e94c680a702cf5ddcdecca71ae5d3896ac24a6a505e91/Web0602.JPG",
     "https://freight.cargo.site/w/1500/q/75/i/ac042407aecfa13b0255d4d04235460fb8c8f17820e9be7a35e53c2c887c7701/IMG_5281-2.JPG",
     "https://i.pinimg.com/736x/86/76/6d/86766ddb85c5f7844301bc47ad667b9d.jpg",
-
     "https://freight.cargo.site/w/1500/q/75/i/3ef9fad0c1f3ae0f3d3df9df45415c3483f9c983105c95222a004e7695667ce3/PT07AC05WWB_6.jpg",
     "https://i.pinimg.com/736x/74/5f/60/745f607b1e68dc3c38bf1892c79c93e2.jpg",
   ];
+
+  //todo: Home.jsx => Home.tsx
+  //todo: Поменьше CSS побольше библиотек типа AndDesign
 
   return (
     <div>
@@ -56,4 +60,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
